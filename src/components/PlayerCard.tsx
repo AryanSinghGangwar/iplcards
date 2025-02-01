@@ -164,12 +164,12 @@ export function PlayerCard({ player }: PlayerCardProps) {
             
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-3 flex items-center gap-3 border border-white/10 shadow-lg">
               <Kanban className="w-6 h-6 text-yellow-300" />
-              <span className="text-lg font-['Teko'] text-white">{player.Wickets} Wickets</span>
+              <span className="text-lg font-['Teko'] text-white">{player.Run} Runs</span>
             </div>
 
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-3 flex items-center gap-3 border border-white/10 shadow-lg">
               <Zap className="w-6 h-6 text-yellow-300" />
-              <span className="text-lg font-['Teko'] text-white">Runs: {player['Run']}</span>
+              <span className="text-lg font-['Teko'] text-white">SR: {player['Strike Rate']}</span>
             </div>
 
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-3 flex items-center gap-3 border border-white/10 shadow-lg">
