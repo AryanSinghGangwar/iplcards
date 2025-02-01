@@ -146,7 +146,7 @@ export function PlayerCard({ player }: PlayerCardProps) {
           <div className="relative">
             {/* Batter Text */}
             <div className="absolute -top-4 right-0 bg-red-600/90 px-3 py-0.5 rounded-full transform -rotate-3 shadow-lg">
-              <span className="text-sm font-['Teko'] text-white tracking-wider">Bowlers</span>
+              <span className="text-sm font-['Teko'] text-white tracking-wider">Batsman</span>
             </div>
             
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-blue-500/20 blur-lg" />
