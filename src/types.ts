@@ -1,9 +1,9 @@
 export interface Player {
   Name: string;
-  Matches: number;
+  Match: number;
   'Base price': string;
-  Runs: number;
-  'Strike Rate': number;
+  Wickets: number;
+  'Economy': number;
   Average: number;
   'Image Link': string;
 }

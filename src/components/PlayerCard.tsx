@@ -73,7 +73,7 @@
 // }
 
 import React from 'react';
-import { Trophy, Ticket as Cricket, Zap, DollarSign, Target, IndianRupee } from 'lucide-react';
+import { Trophy, Ticket as Cricket, Zap, DollarSign, Target, IndianRupee, Kanban } from 'lucide-react';
 import type { Player } from '../types';
 
 interface PlayerCardProps {
@@ -146,7 +146,7 @@ export function PlayerCard({ player }: PlayerCardProps) {
           <div className="relative">
             {/* Batter Text */}
             <div className="absolute -top-4 right-0 bg-red-600/90 px-3 py-0.5 rounded-full transform -rotate-3 shadow-lg">
-              <span className="text-sm font-['Teko'] text-white tracking-wider">BATTER</span>
+              <span className="text-sm font-['Teko'] text-white tracking-wider">Bowlers</span>
             </div>
             
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-blue-500/20 blur-lg" />
@@ -159,17 +159,17 @@ export function PlayerCard({ player }: PlayerCardProps) {
           <div className="grid grid-cols-2 gap-4 mb-6">
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-3 flex items-center gap-3 border border-white/10 shadow-lg">
               <Trophy className="w-6 h-6 text-yellow-300" />
-              <span className="text-lg font-['Teko'] text-white">{player.Matches} Matches</span>
+              <span className="text-lg font-['Teko'] text-white">{player.Match} Matches</span>
             </div>
             
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-3 flex items-center gap-3 border border-white/10 shadow-lg">
-              <Cricket className="w-6 h-6 text-yellow-300" />
-              <span className="text-lg font-['Teko'] text-white">{player.Runs} Runs</span>
+              <Kanban className="w-6 h-6 text-yellow-300" />
+              <span className="text-lg font-['Teko'] text-white">{player.Wickets} Wickets</span>
             </div>
 
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-3 flex items-center gap-3 border border-white/10 shadow-lg">
               <Zap className="w-6 h-6 text-yellow-300" />
-              <span className="text-lg font-['Teko'] text-white">SR: {player['Strike Rate']}</span>
+              <span className="text-lg font-['Teko'] text-white">Econ: {player['Economy']}</span>
             </div>
 
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-3 flex items-center gap-3 border border-white/10 shadow-lg">
